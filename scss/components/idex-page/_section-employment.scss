@@ -1,0 +1,35 @@
+.employments-section {
+    padding-top: 0;
+}
+
+.employments-section__list {
+    @include flexed(null, space-between);
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.employment {
+    display: block;
+}
+
+.employments-section__card {
+    position: relative;
+}
+
+.employments-section__sub-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 22px 0;
+    margin: 0;
+
+    @include font(700, $mainTextSize, $mainLH);
+    text-transform: uppercase;
+    text-align: center;
+
+    color: $backgroundMain;
+    background-color: $darkBg;
+    opacity: 0.8;
+}

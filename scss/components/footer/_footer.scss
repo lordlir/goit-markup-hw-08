@@ -1,0 +1,8 @@
+.footer {
+    background-color: $darkBg;
+    padding: 60px 0;
+}
+
+.footer .conteiner {
+    @include flexed(baseline, space-between);
+}

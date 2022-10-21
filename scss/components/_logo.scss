@@ -1,0 +1,29 @@
+.logo {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    text-decoration: none;
+
+
+    & &__part {
+    color: $brandColor;
+    }
+
+    &.page-header__logo--main {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    color: #000000;
+    }
+    
+    &.footer-contact__logo--dark {
+    display: block;
+    color: $backgroundMain;
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding: 0;
+}
+}

@@ -1,0 +1,10 @@
+.footer-media__sub-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    @include font (700, $mainTextSize, $mainLH);
+    text-transform: uppercase;
+    
+
+    color: $backgroundMain;
+}
