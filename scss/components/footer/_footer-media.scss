@@ -1,10 +1,23 @@
+.footer-media{
+    text-align: center;
+    @media screen and (min-width:1200px) {
+            text-align: start;
+        }
+
+
+}
+
 .footer-media__sub-title {
     margin-top: 0;
     margin-bottom: 20px;
-
+    text-align: center;
     @include font (700, $mainTextSize, $mainLH);
     text-transform: uppercase;
     
 
     color: $backgroundMain;
+
+    @media screen and (min-width:1200px) {
+            text-align: start;
+        }
 }

@@ -6,6 +6,49 @@ body {
     background-color: $backgroundMain;
 }
 
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.conteiner {
+     
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width:480px) {
+        width:480px
+        
+    }
+    @media screen and (min-width:768px) {
+        width: 768px;
+        
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 1200px;
+    }
+}
+
+.section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    @include font(700, 26px, calc(33 / 26));
+
+    @media screen and (min-width:1200px) {
+        @include font(700, 36px, calc(42/36))
+    }
+    
+}
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -19,29 +62,12 @@ body {
     margin: -1px;
 }
 
-.conteiner {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
+
 
 img,
 svg {
     display: block;
 }
 
-.section-title {
-    margin-top: 0;
-    margin-bottom: 50px;
-
-    font-size: 36px;
-    line-height: calc(42 / 36);
-    text-align: center;
-}

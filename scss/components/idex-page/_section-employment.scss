@@ -1,5 +1,10 @@
 .employments-section {
     padding-top: 0;
+
+    @media screen and (max-width:1199px) {
+        display:none;
+    }
+
 }
 
 .employments-section__list {

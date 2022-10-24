@@ -1,12 +1,36 @@
 .benefits-section__list {
-    @include flexed(null, space-between);
+    // @include flexed(null, space-between);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media screen and (min-width:480px) {
+    
+    display: flex;
+    flex-direction :column;
+    gap: 30px;
+    }
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
 
 .benefits-section__item {
-    flex-basis: 270px;
+    flex-basis: 100%;
+    @media screen and(min-width:768px ){
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media screen and(min-width:1200px) {
+        flex-basis: calc((100% - 90px) / 4);
+    }
 }
 
 .benefits-section__box {
@@ -28,6 +52,12 @@
 
     @include font(null, $mainTextSize, $mainLH);
     text-transform: uppercase;
+    text-align: center;
+
+    @media screen and(min-width:768px) {
+        text-align: left;
+        
+    }
 }
 
 .benefits-section__advantage {

@@ -1,3 +1,11 @@
+.footer-contacts{
+    text-align: center;
+    @media screen and (min-width:1200px) {
+     text-align: start;   
+    }
+    
+}
+
 .footer-contacts__list {
     margin: 0;
     padding: 0;

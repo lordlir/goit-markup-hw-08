@@ -1,5 +1,7 @@
 .main-nav {
     @include flexed(center, null);
+
+    
 }
 
 
@@ -8,6 +10,10 @@
     margin: 0;
     padding-left: 0;
     list-style: none;
+
+    @media screen and(max-width:767px) {
+            display: none;
+        }
 }
 
 .main-nav__item:not(:last-child) {
@@ -47,6 +53,8 @@
     &:focus {
         color: $brandColor;
     }
+
+    
 
      
 }
