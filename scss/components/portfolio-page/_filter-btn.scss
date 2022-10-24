@@ -1,15 +1,29 @@
 .filter-btns {
     display: flex;
-    justify-content: center;
+    gap: 8px;
+    // 
     margin-top: 0;
-    margin-bottom: 56px;
+    // margin-bottom: 56px;
     padding: 0;
     list-style: none;
+    @media screen and (max-width:767px) {
+        flex-wrap: wrap;
+        row-gap: 15px;
+        margin-bottom: 40px;
+    }
+    @media screen and (min-width:768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width:1200px) {
+        gap:$gapS;
+        margin-bottom: 50px;
+    }
 }
 
-.filter-btns__item:not(:last-child) {
-    margin-right: 8px;
-}
+// .filter-btns__item:not(:last-child) {
+//     margin-right: 8px;
+// }
 
 .filter-btns__button {
     padding: 6px 25px;
