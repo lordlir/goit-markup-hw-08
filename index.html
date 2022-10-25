@@ -38,9 +38,15 @@
             </li>
           </ul>
         </nav>
-        <svg class="burger" width="40" height="40">
-          <use href="./images/symbol-defs.svg#icon-burger"></use>
-        </svg>
+        <button
+          class="burger-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="burger-btn__burger" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </button>
         <ul class="page-header__contact-list">
           <li class="page-header__contact-item">
             <a
@@ -229,11 +235,11 @@
             <li class="employments-section__item">
               <div class="employments-section__card">
                 <img
-                  src="./images/employee/coding@1x.jpg"
+                  src="./images/desktop/employee/coding@1x.jpg"
                   srcset="
-                    ./images/employee/coding@1x.jpg 1x,
-                    ./images/employee/coding@2x.jpg 2x,
-                    ./images/employee/coding@3x.jpg 3x
+                    ./images/desktop/employee/coding@1x.jpg 1x,
+                    ./images/desktop/employee/coding@2x.jpg 2x,
+                    ./images/desktop/employee/coding@3x.jpg 3x
                   "
                   alt="кодимо"
                   width="370"
@@ -244,11 +250,11 @@
             <li class="employments-section__item">
               <div class="employments-section__card">
                 <img
-                  src="./images/employee/work@1x.jpg"
+                  src="./images/desktop/employee/work@1x.jpg"
                   srcset="
-                    ./images/employee/work@1x.jpg 1x,
-                    ./images/employee/work@2x.jpg 2x,
-                    ./images/employee/work@3x.jpg 3x
+                    ./images/desktop/employee/work@1x.jpg 1x,
+                    ./images/desktop/employee/work@2x.jpg 2x,
+                    ./images/desktop/employee/work@3x.jpg 3x
                   "
                   alt="дизайн"
                   width="370"
@@ -259,11 +265,11 @@
             <li class="employments-section__item">
               <div class="employments-section__card">
                 <img
-                  src="./images/employee/take-color.jpg"
+                  src="./images/desktop/employee/take-color.jpg"
                   srcset="
-                    ./images/employee/take-color.jpg    1x,
-                    ./images/employee/take-color@2x.jpg 2x,
-                    ./images/employee/take-color@3x.jpg 3x
+                    ./images/desktop/employee/take-color.jpg    1x,
+                    ./images/desktop/employee/take-color@2x.jpg 2x,
+                    ./images/desktop/employee/take-color@3x.jpg 3x
                   "
                   alt="вибір кольору"
                   width="370"
@@ -283,12 +289,40 @@
           <ul class="team-section__list">
             <li class="team-section__item">
               <div class="player">
-                <img
-                  class="player__image"
-                  src="./images/igor-demjanenko.jpg"
-                  alt="Ігор_Дем'яненко"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/team/igor@1x.jpg 1x,
+                      ./images/desktop/team/igor@2x.jpg 2x,
+                      ./images/desktop/team/igor@3x.jpg 3x
+                    "
+                    media="(min-width:900px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/team/igor.jpg    1x,
+                      ./images/tablet/team/igor@2x.jpg 2x,
+                      ./images/tablet/team/igor@3x.jpg 3x
+                    "
+                    media="(max-width:900px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/team/igor.jpg    1x,
+                      ./images/mobile/team/igor@2x.jpg 2x,
+                      ./images/mobile/team/igor@3x.jpg 3x
+                    "
+                    media="(max-width:600px)"
+                  />
+
+                  <img
+                    class="player__image"
+                    src="./images/desktop/team/igor@1x.jpg"
+                    alt="Ігор_Дем'яненко"
+                  />
+                </picture>
                 <div class="player__data">
                   <h3 class="player__sub-title">Ігор Дем'яненко</h3>
                   <p class="player__position">Product Designer</p>
@@ -336,12 +370,40 @@
 
             <li class="team-section__item">
               <div class="player">
-                <img
-                  class="player__image"
-                  src="./images/olga-repina.jpg"
-                  alt="Ольга_Рєпіна"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/team/olga@1x.jpg 1x,
+                      ./images/desktop/team/olga@2x.jpg 2x,
+                      ./images/desktop/team/olga@3x.jpg 3x
+                    "
+                    media="(min-width:900px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/team/olga.jpg    1x,
+                      ./images/tablet/team/olga@2x.jpg 2x,
+                      ./images/tablet/team/olga@3x.jpg 3x
+                    "
+                    media="(max-width:900px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/team/olga.jpg    1x,
+                      ./images/mobile/team/olga@2x.jpg 2x,
+                      ./images/mobile/team/olga@3x.jpg 3x
+                    "
+                    media="(max-width:600px)"
+                  />
+
+                  <img
+                    class="player__image"
+                    src="./images/desktop/team/olga@1x.jpg"
+                    alt="Ігор_Дем'яненко"
+                  />
+                </picture>
                 <div class="player__data">
                   <h3 class="player__sub-title">Ольга Рєпіна</h3>
                   <p class="player__position">Frontend Developer</p>
@@ -388,12 +450,40 @@
             </li>
             <li class="team-section__item">
               <div class="player">
-                <img
-                  class="player__image"
-                  src="./images/nikola-tarasov.jpg"
-                  alt="Микола_Тарасов"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/team/nikola@1x.jpg 1x,
+                      ./images/desktop/team/nikola@2x.jpg 2x,
+                      ./images/desktop/team/nikola@3x.jpg 3x
+                    "
+                    media="(min-width:900px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/team/nikola.jpg    1x,
+                      ./images/tablet/team/nikola@2x.jpg 2x,
+                      ./images/tablet/team/nikola@3x.jpg 3x
+                    "
+                    media="(max-width:900px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/team/nikola.jpg    1x,
+                      ./images/mobile/team/nikola@2x.jpg 2x,
+                      ./images/mobile/team/nikola@3x.jpg 3x
+                    "
+                    media="(max-width:600px)"
+                  />
+
+                  <img
+                    class="player__image"
+                    src="./images/desktop/team/nikola@1x.jpg"
+                    alt="Ігор_Дем'яненко"
+                  />
+                </picture>
                 <div class="player__data">
                   <h3 class="player__sub-title">Микола Тарасов</h3>
                   <p class="player__position">Marketing</p>
@@ -440,12 +530,40 @@
             </li>
             <li class="team-section__item">
               <div class="player">
-                <img
-                  class="player__image"
-                  src="./images/majkl-ermakov.jpg"
-                  alt="Михайло_Єрмаков"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/team/majkl@1x.jpg 1x,
+                      ./images/desktop/team/majkl@2x.jpg 2x,
+                      ./images/desktop/team/majkl@3x.jpg 3x
+                    "
+                    media="(min-width:900px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tablet/team/majkljpg     1x,
+                      ./images/tablet/team/majkl@2x.jpg 2x,
+                      ./images/tablet/team/majkl@3x.jpg 3x
+                    "
+                    media="(max-width:900px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/mobile/team/majkl.jpg    1x,
+                      ./images/mobile/team/majkl@2x.jpg 2x,
+                      ./images/mobile/team/majkl@3x.jpg 3x
+                    "
+                    media="(max-width:600px)"
+                  />
+
+                  <img
+                    class="player__image"
+                    src="./images/desktop/team/majkl@1x.jpg"
+                    alt="Ігор_Дем'яненко"
+                  />
+                </picture>
                 <div class="player__data">
                   <h3 class="player__sub-title">Михайло Єрмаков</h3>
                   <p class="player__position">UI designer</p>
@@ -641,6 +759,54 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="burger-btn js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/symbol-defs.svg#icon-close_cross"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-nav">
+        <li class="mobile-nav__item">
+          <a href="./index.html" class="mobile-nav__link">Студія</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="" class="mobile-nav__link">Контакти</a>
+        </li>
+      </ul>
+      <div class="contact-box">
+        <ul class="mobile-contact">
+          <li class="mobile-contact__item">
+            <a href="tel:+380961111111" class="mobile-contact__link--number"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contact__item">
+            <a href="mailto:info@devstudio.com" class="mobile-contact__link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-media">
+          <li class="mobile-media__item">
+            <a href="" class="mobile-media__link">Instagram</a>
+          </li>
+          <li class="mobile-media__item">
+            <a href="" class="mobile-media__link">Twitter</a>
+          </li>
+          <li class="mobile-media__item">
+            <a href="" class="mobile-media__link">Facebook</a>
+          </li>
+          <li class="mobile-media__item">
+            <a href="" class="mobile-media__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobail-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
