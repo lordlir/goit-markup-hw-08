@@ -90,7 +90,13 @@
               <a href="" class="project__link">
                 <div class="project__card">
                   <img
-                    src="./images/laptop.jpg"
+                    src="./images/projects/laptop@1x.jpg"
+                    srcset="
+                      ./images/projects/laptop@1x.jpg  370w,
+                      ./images/projects/laptop@2x.jpg  740w,
+                      ./images/projects/laptop@3x.jpg 1100w
+                    "
+                    sizes="(min-width: 1100px) 33vw, (min-width: 740px) 50vw,  100vw"
                     alt="ноутбук"
                     width="370"
                     class="project__img"
