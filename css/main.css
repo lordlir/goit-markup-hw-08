@@ -344,6 +344,25 @@ svg {
   margin-right: 10px;
   fill: currentColor;
 }
+.page-header__contact-icon--mail-size {
+  width: 14px;
+  height: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .page-header__contact-icon--mail-size {
+    width: 16px;
+    height: 12px;
+  }
+}
+.page-header__contact-icon--phone-size {
+  width: 10px;
+  height: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .page-header__contact-icon--phone-size {
+    height: 16px;
+  }
+}
 
 .page-header__contact-link {
   display: flex;
@@ -366,9 +385,7 @@ svg {
     line-height: 1.14;
   }
 }
-
-.page-header__contact-link:hover,
-.page-header__contact-link:focus {
+.page-header__contact-link:hover, .page-header__contact-link:focus {
   color: #2196f3;
 }
 

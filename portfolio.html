@@ -37,6 +37,15 @@
             </li>
           </ul>
         </nav>
+        <button
+          class="burger-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="burger-btn__burger" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </button>
         <ul class="page-header__contact-list">
           <li class="page-header__contact-item">
             <a
@@ -90,15 +99,13 @@
               <a href="" class="project__link">
                 <div class="project__card">
                   <img
-                    src="./images/projects/laptop@1x.jpg"
+                    src="./images/desktop/projects/laptop@1x.jpg"
                     srcset="
-                      ./images/projects/laptop@1x.jpg  370w,
-                      ./images/projects/laptop@2x.jpg  740w,
-                      ./images/projects/laptop@3x.jpg 1100w
+                      ./images/desktop/projects/laptop@1x.jpg 370w,
+                      ./images/desktop/projects/laptop@2x.jpg 740w
                     "
-                    sizes="(min-width: 1100px) 33vw, (min-width: 740px) 50vw,  100vw"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width:480px) 450px, 100vw"
                     alt="ноутбук"
-                    width="370"
                     class="project__img"
                   />
 
@@ -392,5 +399,53 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="burger-btn js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/symbol-defs.svg#icon-close_cross"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-nav">
+        <li class="mobile-nav__item">
+          <a href="./index.html" class="mobile-nav__link">Студія</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="" class="mobile-nav__link">Контакти</a>
+        </li>
+      </ul>
+      <div class="contact-box">
+        <ul class="mobile-contact">
+          <li class="mobile-contact__item">
+            <a href="tel:+380961111111" class="mobile-contact__link--number"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contact__item">
+            <a href="mailto:info@devstudio.com" class="mobile-contact__link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-media">
+          <li class="mobile-media__item">
+            <a href="" class="mobile-media__link">Instagram</a>
+          </li>
+          <li class="mobile-media__item">
+            <a href="" class="mobile-media__link">Twitter</a>
+          </li>
+          <li class="mobile-media__item">
+            <a href="" class="mobile-media__link">Facebook</a>
+          </li>
+          <li class="mobile-media__item">
+            <a href="" class="mobile-media__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobail-menu.js"></script>
   </body>
 </html>
