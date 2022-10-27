@@ -3,12 +3,9 @@
 }
 
 .page-header .conteiner {
-    display: flex;
+    @include flexed (center, space-between);
 
-    @media screen and (max-width:1199px) {
-        @include flexed (center, space-between);
-        
-    }
+
 }
 
 
@@ -16,20 +13,18 @@
 
 .page-header__contact-list {
     list-style: none;
-    
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        padding: 21px 0;
+        gap: 10px;
     margin: 0;
 
     @media screen and (max-width:767px) {
     display: none;
     }
    
-    @media screen and (min-width:768px) {
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;
-        padding:21px 0;
-        gap: 10px;
-    }
+
 
     @media screen and (min-width:1200px) {
         display: flex;
