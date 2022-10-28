@@ -13,6 +13,7 @@
     border-radius: 50%;
     outline: none;
 
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media (min-width: 768px) {
 
@@ -41,7 +42,7 @@
     z-index: 999;
 
     transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-container.is-open {
@@ -63,25 +64,38 @@
     &__link{
         display: block;
         text-decoration: none;
-        @include font (500, 40px, calc(47 / 40));
+        @include font (500, calc(24px + 16 * (100vw / 480)), calc(47 / 40));
         letter-spacing: 0.02em;
         
         color: $mainTextColor;
 
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &--active {
+                position: relative;
+                color: $brandColor;
+            }
+    
+        &:hover ,
+        &:focus  {
+            color: $brandColor;
+        }
     }
 
-    &__item:not(:last-child){
-        margin-bottom: 32px;
+    &__item{
+
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+
+
+        &:hover &__link,
+        &:focus &__link {
+            color: $brandColor;
+        }
     }
-
-    &__item:hover &__link,
-    &__item:focus &__link{
-        color: $brandColor;
-    }
-
-
-}
+}    
 
 .contact-box{
     display: flex;
@@ -99,21 +113,24 @@
         margin-bottom: 32px;
     }
 
-    &__link--number {
-            display: block;
-            @include font(500, 34px, calc(40 / 34));
-            letter-spacing: 0.02em;
-            text-decoration: none;
-            color: $brandColor;
-        }
+
     
         &__link {
             display: block;
-            @include font(500, 24px, calc(28 / 24));
+            @include font(500,calc(18px + 6 * (100vw / 480)), calc(28 / 24));
             letter-spacing: 0.02em;
             text-decoration: none;
             color: $otherTextColor;
+       
+            transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover {
+                @include font(500, calc(18px + 13 * (100vw / 480)), calc(28 / 24));
+                color: $brandColor;
+            }
         }
+
+
+        
 }
 
 
@@ -122,7 +139,7 @@
     display: flex;
     align-items: flex-start;
     gap: 20px;
-
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     list-style: none;
