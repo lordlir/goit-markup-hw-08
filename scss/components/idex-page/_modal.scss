@@ -169,7 +169,7 @@
     }
 
     @media screen and (min-width:1200px) {
-        @include font(null, $mainTextSize, $secondaryLH);
+        @include font(null, 14px, $secondaryLH);
     }        
 }
 
