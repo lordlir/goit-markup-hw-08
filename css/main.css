@@ -301,13 +301,11 @@ svg {
 .page-header {
   border-bottom: 1px solid #ececec;
 }
-
 .page-header .conteiner {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .page-header__contact-list {
   list-style: none;
   display: flex;
@@ -330,7 +328,6 @@ svg {
     gap: 30px;
   }
 }
-
 .page-header__contact-icon {
   margin-right: 10px;
   fill: currentColor;
@@ -354,7 +351,6 @@ svg {
     height: 16px;
   }
 }
-
 .page-header__contact-link {
   display: flex;
   align-items: center;
