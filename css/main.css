@@ -703,7 +703,7 @@ svg {
 }
 @media screen and (min-width: 1200px) {
   .modal__form-chekbox {
-    font-size: 14;
+    font-size: 14px;
     line-height: 1.71;
   }
 }
